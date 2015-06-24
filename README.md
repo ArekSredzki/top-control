@@ -53,7 +53,7 @@ Please note that this example uses a fair amount of styling and has dependencies
   opacity: 1;
 }
 #top-control:hover {
-  background: #93cb60;
+  background: #888;
 }
 #top-control .fa {
   position: relative;
