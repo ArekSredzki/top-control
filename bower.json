@@ -1,0 +1,25 @@
+{
+  "name": "top-control",
+  "version": "0.0.1",
+  "authors": [
+    "Arek Sredzki <arek@sredzki.com>"
+  ],
+  "description": "A lightweight Vanilla JS based go-to-top control.",
+  "main": "dist/top-control.min.js",
+  "keywords": [
+    "top-control"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "bower_components",
+    "README.md"
+  ]
+}

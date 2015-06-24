@@ -1,0 +1,17 @@
+{
+  "name": "top-control",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A lightweight Vanilla JS based go-to-top control",
+  "author": "Arek Sredzki",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "jshint-stylish": "^2.0.1"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
