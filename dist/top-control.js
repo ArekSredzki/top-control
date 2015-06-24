@@ -1,15 +1,7 @@
-// Scroll to top
-window.onscroll = animateTopControl;
+// Top-Control v0.0.1
+// Made with <3 by Arek Sredzki
 
 var topControl = document.getElementById('top-control');
-
-function animateTopControl() {
-  if (window.pageYOffset >= 250) {
-    addClass(topControl, 'active');
-  } else {
-    removeClass(topControl, 'active');
-  }
-}
 
 topControl.onclick = function() {
   scrollTo(document.body, 0, 100);
@@ -26,13 +18,14 @@ function scrollTo(element, to, duration) {
   }, 10);
 }
 
-function addClass(el, cssClass) {
-  el.className += ' ' + cssClass;
-}
+window.onscroll = animateTopControl;
 
-function removeClass(el, cssClass) {
-  var elClass = ' ' + el.className + ' ';
-  while (elClass.indexOf(' ' + cssClass + ' ') != -1)
-    elClass = elClass.replace(' ' + cssClass + ' ', '');
-  el.className = elClass;
+function animateTopControl() {
+  if (window.pageYOffset >= 250) {
+    if (!topControl.classList.contains('active')) {
+      topControl.classList.add('active');
+    }
+  } else {
+    topControl.classList.remove('active');
+  }
 }
