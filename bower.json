@@ -9,6 +9,10 @@
   "keywords": [
     "top-control"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/areksredzki/top-control.git"
+  },
   "license": "MIT",
   "ignore": [
     "src",
@@ -20,6 +24,7 @@
     "gruntfile.js",
     "package.json",
     "bower_components",
+    "example",
     "README.md"
   ]
 }
