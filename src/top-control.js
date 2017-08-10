@@ -4,8 +4,12 @@
 var topControl = document.getElementById('top-control');
 
 topControl.onclick = function() {
-  scrollTo(document.body, 0, 100);
-}
+  var selector = 'body';
+  if (navigator.userAgent.indexOf("Firefox") > 0) {
+    selector = 'html';
+  }
+  scrollTo(document.querySelector(selector), 0, 100);
+};
 
 function scrollTo(element, to, duration) {
   if (duration < 0) return;
